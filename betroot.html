@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beetroot events</title>
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
     <button onclick="console.log('button pressed')">buton One</button>
@@ -13,7 +20,23 @@
     <button id="btnFour">button four</button>
     <button id="btnFive">button five</button>
     <button id="btnSix">button six</button>
-    <a href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA"  id="link" >link</a>
+    <button id="seven"
+    onclick="testAdd()"
+    >button add</button>
+    <button id="eight"
+    onclick="testRemove()">button remove</button>
+    <button id="nine"
+    >button test</button>
+    <a href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA" id="link" >link</a>
+
+    <div class="square"
+onmouseover="editColor()"
+id="editColor"
+    > </div>
+
+   
+
+
     <script src="./js/beetroot.js"></script>
 </body>
 </html>
