@@ -9,4 +9,24 @@ let h =  100;
         h++;
     }
 
-   
+let thMenu = document.getElementById('tr');
+function pressedMenu () {
+
+
+}
+
+function pressedPrice() {
+
+  
+  }
+let thPrice = document.getElementById('thPrice')
+thMenu.addEventListener ('click',function(event){
+    if (event.target.closest ('#thMenu')) {
+        pressedMenu()
+    }
+})
+thPrice.addEventListener ('click',function(event){
+    if (event.target.closest ('#thPrice')) {
+        pressedPrice()
+    }
+})

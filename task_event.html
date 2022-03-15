@@ -13,13 +13,52 @@
             margin: 20px;
             padding: 20px;
         }
+        table,th,td {
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            text-align: center;
+        }
+        th:hover {
+       background: yellow;
+     }
     </style>
 </head>
 <body>
-<div class="block" id="block"
->
+<div class="block" id="block">
 I sometimes have dinner, but not very often!
 </div>
+
+<table id="grid">
+    <thead>
+        <tr id="tr">
+            <th data-type="string" id="thMenu" >Menu</th>
+            <th data-type="number" id="thPrice">Price</th>
+            <th data-type="number" id="thThree">Summ</th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+        <td>Coffee</td>
+        <td>2</td>
+        <td>50.00</td>
+    </tr>
+    <tr>
+        <td>Water</td>
+        <td>1</td>
+        <td>15.00</td>
+    </tr>
+    <tr>
+        <td>Fish</td>
+        <td>2</td>
+        <td>400.00</td>
+    </tr>
+
+  </tbody>
+</table>
 
     <script src="./js/task.js"></script>
 </body>
