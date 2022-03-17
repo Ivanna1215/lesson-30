@@ -31,6 +31,7 @@ function editSize() {
 }
 function startEdit(event) {
 let block = document.getElementById('block');
+block.style.display = 'red';
 block.style.width = event.clientX + 'px';
 block.style.height = event.clientY + 'px';
 }
